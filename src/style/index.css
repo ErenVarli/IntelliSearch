@@ -63,12 +63,16 @@ body {
 #popup-button {
   width: max-content;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 100px;
   top: 23px;
   right: 20px;
-  background-color: rgb(229, 230, 236);
+  color: white;
+  background-color: #0B5ED7;
 }
-
+.form-control{
+  font-weight: 500 !important;
+  color: #0B5ED7 !important;
+}
 @media (max-width: 768px) {
   .search-window form {
     width: 95% !important;
