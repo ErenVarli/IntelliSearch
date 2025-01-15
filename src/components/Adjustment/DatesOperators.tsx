@@ -9,11 +9,11 @@ const DateOperators: React.FC = () => {
     ];
 
     return (
-        <>
+        <div className="operator-box">
             {dateInputs.map((input, index) => (
                 <InputDateType key={index} label={input.label} text={input.text}/>
             ))}
-        </>
+        </div>
     )
 }
 export default DateOperators
