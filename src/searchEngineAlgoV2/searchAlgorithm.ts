@@ -142,7 +142,7 @@ export function setSearchEngineRequest() {
     (<HTMLInputElement>document.getElementById("gsc-i-id1")).value =
       getUserRequest();
   } else {
-    window.location.href = "/";
+    window.location.href = "/intellisearch";
   }
 
   let search_button: HTMLElement = document.querySelector(
