@@ -2,7 +2,6 @@ body {
   background-color: #f2f5f8 !important;
   overflow-x: hidden;
 }
-
 .gsc-control-cse {
   border-radius: 25px;
   overflow: hidden;
@@ -14,17 +13,10 @@ body {
   padding: 2px !important;
   width: 75% !important;
 }
-
-.gsc-input-box,
-#gsc-i-id1 {
-  background-color: transparent !important;
-  border: none !important;
-}
-
 .gsc-search-button-v2 {
-  margin-left: 10px;
   margin-top: 5px;
-  background-color: #0078d7;
+  background-color: #1b2731 !important;
+  border: none !important;
   padding: 10px !important;
   border-radius: 50% !important;
 }
@@ -33,15 +25,6 @@ body {
   width: 16px;
   height: 16px;
 }
-
-.search-window {
-  background-color: #f2f5f8;
-  position: absolute !important;
-  left: 0 !important;
-  top: 0 !important;
-  width: 100% !important;
-}
-
 .gssb_e {
   border: none !important;
   position: relative !important;
@@ -50,35 +33,62 @@ body {
 .gsc-completion-container {
   border-radius: 15px !important;
 }
-.gs-snippet{
+.gs-snippet {
   background-color: transparent !important;
   border: none !important;
   font-weight: bolder !important;
+}
+.search-window {
+  background-color: #f2f5f8;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+}
+.form-control {
+  font-weight: 500 !important;
+  color: #0b5ed7 !important;
+}
+.search-window {
+  z-index: 10 !important;
+}
+fieldset .operator-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.gsc-input-box,
+#gsc-i-id1 {
+  background-color: transparent !important;
+  border: none !important;
 }
 #gcse-search-bar {
   width: 100%;
   padding: 0 !important;
 }
-
 #popup-button {
   width: max-content;
   position: absolute;
-  border-radius: 100px;
-  top: 23px;
-  right: 20px;
+  border-radius: 5px;
+  top: 10px;
+  right: 10px;
+  padding-top: 5px;
   color: white;
-  background-color: #0B5ED7;
 }
-.form-control{
-  font-weight: 500 !important;
-  color: #0B5ED7 !important;
-}
-@media (max-width: 768px) {
+
+@media (min-width: 375px) and (max-width: 768px) {
   .search-window form {
     width: 95% !important;
   }
   .header-container {
     width: 100% !important;
+  }
+  fieldset .operator-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
   }
   .introduction-text {
     width: 90% !important;
@@ -90,6 +100,12 @@ body {
   .gsc-control-cse {
     width: 95% !important;
   }
+  .home-content {
+    position: relative;
+    top: 3em;
+    width: 95%;
+    margin: auto;
+  }
   #popup-header img,
   #popup-header span {
     margin: auto !important;
@@ -98,10 +114,59 @@ body {
     margin-right: 5px !important;
   }
   #intro-style-paragraph {
-    width: 100%  !important;
+    width: 100% !important;
   }
   #popup-button {
-    right: 15px;
+    right: 0px;
+  }
+  #advertisment {
+    width: 95% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .search-window form {
+    width: 90% !important;
+  }
+  .header-container {
+    width: 80% !important;
+  }
+  .header-container p {
+    font-size: 16px !important;
+  }
+  fieldset .operator-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .introduction-text {
+    width: 70% !important;
+    font-size: 26px !important;
+  }
+  .mobile-wrap {
+    flex-wrap: wrap;
+  }
+  .gsc-control-cse {
+    width: 75% !important;
+    height: 7 * 60px !important;
+  }
+  .home-content {
+    position: relative;
+    top: 5em;
+  }
+  #popup-header img,
+  #popup-header span {
+    margin: auto !important;
+  }
+  #popup-header img {
+    margin-right: 5px !important;
+  }
+  #intro-style-paragraph {
+    width: 100% !important;
+  }
+  #popup-button {
+    right: 0px;
   }
   #advertisment {
     width: 95% !important;
