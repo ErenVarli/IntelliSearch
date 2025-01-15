@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { showPopup } from "../../actions/DisplayPopup";
 import SearchFormPopup from "../Popup/SearchFormPopup";
+import { displayPopup } from "../../actions/DisplayPopup";
 
 const ButtonFilter: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
-    showPopup();
+    displayPopup(true);
   };
 
   const handleClosePopup = () => {
     setIsPopupOpen(false);
+    displayPopup(false);
   };
 
   return (
@@ -22,11 +23,18 @@ const ButtonFilter: React.FC = () => {
         id="popup-button"
         className="btn"
       >
-  {/*
-        <svg width="25" height="25" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#FFFFFF"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Filter</title> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="Filter"> <rect id="Rectangle" fillRule="nonzero" x="0" y="0" width="24" height="24"> </rect> <line x1="4" y1="5" x2="16" y2="5" id="Path" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"> </line> <line x1="4" y1="12" x2="10" y2="12" id="Path" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"> </line> <line x1="14" y1="12" x2="20" y2="12" id="Path" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"> </line> <line x1="8" y1="19" x2="20" y2="19" id="Path" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"> </line> <circle id="Oval" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" cx="18" cy="5" r="2"> </circle> <circle id="Oval" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" cx="12" cy="12" r="2"> </circle> <circle id="Oval" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" cx="6" cy="19" r="2"> </circle> </g> </g> </g></svg> 
- */}      
- Hacking
- </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#283b49"
+            d="m9.25 22l-.4-3.2q-.325-.125-.612-.3t-.563-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.338v-.675q0-.163.025-.338L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375t.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3t.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.338v.674q0 .163-.05.338l2.575 1.95l-2.75 4.75l-2.95-1.25q-.275.2-.575.375t-.6.3l-.4 3.2zm2.8-6.5q1.45 0 2.475-1.025T15.55 12t-1.025-2.475T12.05 8.5q-1.475 0-2.488 1.025T8.55 12t1.013 2.475T12.05 15.5"
+          />
+        </svg>
+      </button>
       {isPopupOpen && <SearchFormPopup onClose={handleClosePopup} />}
     </div>
   );
