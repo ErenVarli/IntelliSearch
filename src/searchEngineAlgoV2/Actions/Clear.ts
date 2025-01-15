@@ -1,6 +1,4 @@
-let request = "";
 export function clearAllFilters() {
-    request = "";
     (<HTMLInputElement>document.getElementById("gsc-i-id1")).value = "";
     let inputs = document.querySelectorAll("input");
     inputs.forEach(function (input) {
