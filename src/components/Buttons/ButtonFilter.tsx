@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { showPopup } from "../../actions/DisplayPopup";
 import SearchFormPopup from "../Popup/SearchFormPopup";
+import { displayPopup } from "../../actions/DisplayPopup";
 
 const ButtonFilter: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
-    showPopup();
+    displayPopup(true);
   };
 
   const handleClosePopup = () => {
     setIsPopupOpen(false);
+    displayPopup(false);
   };
 
   return (
@@ -22,7 +23,17 @@ const ButtonFilter: React.FC = () => {
         id="popup-button"
         className="btn"
       >
-      <svg width="25" height="25" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Filter</title> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="Filter"> <rect id="Rectangle" fillRule="nonzero" x="0" y="0" width="24" height="24"> </rect> <line x1="4" y1="5" x2="16" y2="5" id="Path" stroke="#0C0310" strokeWidth="2" strokeLinecap="round"> </line> <line x1="4" y1="12" x2="10" y2="12" id="Path" stroke="#0C0310" strokeWidth="2" strokeLinecap="round"> </line> <line x1="14" y1="12" x2="20" y2="12" id="Path" stroke="#0C0310" strokeWidth="2" strokeLinecap="round"> </line> <line x1="8" y1="19" x2="20" y2="19" id="Path" stroke="#0C0310" strokeWidth="2" strokeLinecap="round"> </line> <circle id="Oval" stroke="#0C0310" strokeWidth="2" strokeLinecap="round" cx="18" cy="5" r="2"> </circle> <circle id="Oval" stroke="#0C0310" strokeWidth="2" strokeLinecap="round" cx="12" cy="12" r="2"> </circle> <circle id="Oval" stroke="#0C0310" strokeWidth="2" strokeLinecap="round" cx="6" cy="19" r="2"> </circle> </g> </g> </g></svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#FFFFFF"
+            d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+          />
+        </svg>
       </button>
       {isPopupOpen && <SearchFormPopup onClose={handleClosePopup} />}
     </div>

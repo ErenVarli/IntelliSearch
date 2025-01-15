@@ -2,7 +2,7 @@ import { combinedOperatorsCombinationEngine } from "./CombinedOperatorsEngine/co
 import { essentialOperatorsCombinationEngine } from "./EssentialOperatorsEngine copy/essentialOperatorsEngine";
 import { dateOperatorsCombinationEngine } from "./DateOperators/dateOperatorsEngine";
 import { fileOperatorsCombinationEngine } from "./FileOperators/FileOperators";
-import { hidePopup } from "../actions/DisplayPopup";
+import { displayPopup } from "../actions/DisplayPopup";
 
 let request: string = "";
 
@@ -142,12 +142,12 @@ export function setSearchEngineRequest() {
     (<HTMLInputElement>document.getElementById("gsc-i-id1")).value =
       getUserRequest();
   } else {
-    window.location.href = "/";
+    window.location.href = "/intellisearch";
   }
 
   let search_button: HTMLElement = document.querySelector(
     ".gsc-search-button-v2"
   ) as HTMLElement;
   search_button.click();
-  hidePopup();
+  displayPopup(false);
 }

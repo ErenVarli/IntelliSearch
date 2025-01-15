@@ -15,11 +15,11 @@ const EssentialOperators: React.FC = () => {
     ];
 
     return (
-        <>
+        <div className="operator-box">
             {essentialOperators.map((input, index) => (
                 <InputTextType key={index} label={input.label} text={input.text} /> 
             ))}
-        </>
+        </div>
     )
 }
 export default EssentialOperators

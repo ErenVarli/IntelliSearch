@@ -9,28 +9,28 @@ const CheckOperators: React.FC = () => {
     const checkInputsSerie4 = ["HTM", "ODS", "ODT", "SVG"];
 
     return (
-        <>
-            <div>
+        <div className="operator-box">
+            <div className="check-box">
                 {checkInputsSerie1.map((input, index) => (
                         <InputCheckType key={index} label={input} />
                 ))}
             </div>
-            <div>
+            <div className="check-box">
                 {checkInputsSerie2.map((input, index) => (
                         <InputCheckType key={index} label={input} />
                 ))}
             </div>      
-            <div>
+            <div className="check-box">
                 {checkInputsSerie3.map((input, index) => (
                         <InputCheckType key={index} label={input} />
                 ))}
             </div>      
-            <div>
+            <div className="check-box">
                 {checkInputsSerie4.map((input, index) => (
                         <InputCheckType key={index} label={input} />
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 export default CheckOperators

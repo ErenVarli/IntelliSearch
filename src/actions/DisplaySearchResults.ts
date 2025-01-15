@@ -7,15 +7,15 @@ export function displaySearchResults(isVisible: boolean): void {
 }
 
 function displayTrue(): void {
-  const searchResults = document.getElementsByClassName("gsc-results-wrapper-nooverlay") as HTMLCollectionOf<HTMLElement>;
-  Array.from(searchResults).forEach(result => {
-    result.style.display = "block";
-  });
+  const searchResults = document.getElementById(
+    "gcse-search-bar"
+  ) as HTMLFormElement;
+  searchResults.style.display = "block";
 }
 
 function displayFalse(): void {
-  const searchResults = document.getElementsByClassName("gsc-results-wrapper-nooverlay") as HTMLCollectionOf<HTMLElement>;
-  Array.from(searchResults).forEach(result => {
-    result.style.display = "none";
-  });
+  const searchResults = document.getElementById(
+    "gcse-search-bar"
+  ) as HTMLFormElement;
+  searchResults.style.display = "none";
 }

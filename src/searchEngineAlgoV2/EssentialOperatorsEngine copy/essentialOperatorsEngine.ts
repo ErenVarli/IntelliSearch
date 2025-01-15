@@ -100,8 +100,8 @@ function required_terms_engine(required_terms: string) {
   if (required_terms) {
     let required_terms_array = required_terms.split(" ");
     if (required_terms_array.length > 1) {
-      for (let i = 0; i < required_terms.length; i++) {
-        request += " " + required_terms[i];
+      for (let i = 0; i < required_terms_array.length; i++) {
+        request += " " + required_terms_array[i];
         if (i < required_terms_array.length - 1) {
           request += " AND";
         }
