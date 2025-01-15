@@ -39,9 +39,6 @@ const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
     <div className="search-window" id="t-search-window">
       <HeaderForm />
       <form className="m-auto d-flex flex-column" style={formStyle}>
-        {/* <Title variante="h4" label="Saiya (AI)" />
-        <InputTextType label="search-bar-disable" text="Tell to Saiya.. (Very soon)" /> */}
-
         <div className="d-flex mobile-wrap">
           <div style={boxWidth} className="d-flex flex-column p-2">
             <div>
@@ -53,7 +50,6 @@ const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
               <EssentialOperators />
             </div>
           </div>
-
           <div
             style={boxWidth}
             className="d-flex flex-column p-2 justify-content-between"
