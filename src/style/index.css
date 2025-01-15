@@ -14,11 +14,12 @@ body {
   width: 75% !important;
 }
 .gsc-search-button-v2 {
-  margin-top: 5px;
+  /*   margin-top: 5px;
   background-color: #1b2731 !important;
   border: none !important;
   padding: 10px !important;
-  border-radius: 50% !important;
+  border-radius: 50% !important; */
+  display: none !important;
 }
 .gsc-search-button-v2 svg {
   fill: #fff;
@@ -71,11 +72,15 @@ fieldset .operator-box {
 #popup-button {
   width: max-content;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 100%;
   top: 10px;
-  right: 10px;
-  padding-top: 5px;
-  color: white;
+  right: 15px;
+  padding: 7px 8.5px;
+  background-color: #1b2731;
+}
+
+#popup-button:hover {
+  padding: 8px 9.5px;
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -118,7 +123,15 @@ fieldset .operator-box {
     width: 100% !important;
   }
   #popup-button {
-    right: 0px;
+    padding: 0;
+    width: 8rem;
+    right: 15px;
+    border-radius: 20px;
+  }
+  #popup-button:hover {
+    width: 8.5rem;
+    padding: 1px 1px ;
+    transition: all 0.2s ease-out;
   }
   #advertisment {
     width: 95% !important;
@@ -167,7 +180,15 @@ fieldset .operator-box {
     width: 100% !important;
   }
   #popup-button {
-    right: 0px;
+    padding: 0;
+    width: 8rem;
+    right: 15px;
+    border-radius: 20px;
+  }
+  #popup-button:hover {
+    width: 8.5rem;
+    padding: 1px 1px ;
+    transition: all 0.2s ease-out;
   }
   #advertisment {
     width: 95% !important;
