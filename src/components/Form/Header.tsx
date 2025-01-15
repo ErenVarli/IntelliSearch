@@ -33,7 +33,7 @@ const marginBeta = {
 };
 
 const marginTitle = {
-  width: "min-content",
+  width: "max-content",
   margin: "auto",
 };
 
@@ -60,7 +60,7 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
           <h1 style={colorBlueDark}>
             Intelli<span style={colorBlueLight}>Search</span>
           </h1>
-          <span style={marginBeta}>isv2</span>
+          <span style={marginBeta}>Se-2</span>
         </div>
         <p id="intro-style-paragraph" style={introStyleParagraph}>
           For educational and research purposes only. Not to be used for
