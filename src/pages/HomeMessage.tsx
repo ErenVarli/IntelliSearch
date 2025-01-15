@@ -9,7 +9,7 @@ const introHomePageStyle = {
 };
 
 const marginImg = {
-  marginBottom: 30,
+  marginBottom: 40,
 };
 
 const marginParagraph = {
@@ -21,7 +21,7 @@ const HomeMessage: React.FC = () => {
     <>
       <div style={introHomePageStyle} className="introduction-text" id="introduction-text">
         <img
-          src="https://evarli.com/wp-content/uploads/2024/05/AspasLogo-Blue-e1716043121658.png"
+          src="../public/icon_evarli.png"
           alt="Evarli Logo"
           width={75}
           height={110}
