@@ -2,7 +2,7 @@ import { combinedOperatorsCombinationEngine } from "./CombinedOperatorsEngine/co
 import { essentialOperatorsCombinationEngine } from "./EssentialOperatorsEngine copy/essentialOperatorsEngine";
 import { dateOperatorsCombinationEngine } from "./DateOperators/dateOperatorsEngine";
 import { fileOperatorsCombinationEngine } from "./FileOperators/FileOperators";
-import { hidePopup } from "../actions/DisplayPopup";
+import { displayPopup } from "../actions/DisplayPopup";
 
 let request: string = "";
 
@@ -149,5 +149,5 @@ export function setSearchEngineRequest() {
     ".gsc-search-button-v2"
   ) as HTMLElement;
   search_button.click();
-  hidePopup();
+  displayPopup(false);
 }
