@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ButtonFilter from "../Buttons/ButtonFilter";
 
 const topBar = {
   width: "100%",
@@ -20,7 +19,6 @@ const Searchbar: React.FC = () => {
   return (
     <div style={topBar} className="d-flex align-items-center">
       <div id="gcse-search-bar" className="gcse-search"></div>
-      <ButtonFilter />
     </div>
   );
 };
