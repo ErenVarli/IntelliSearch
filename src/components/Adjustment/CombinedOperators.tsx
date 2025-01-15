@@ -2,7 +2,6 @@ import React from "react";
 import InputTextType from "../FormElements/InputTextType";
 
 const CombinedOperators: React.FC = () => {
-
     const combinedOperators = [
         { label: "multiple-specific-terms-in-url", text: "Multiple specific terms in URL" },
         { label: "multiple-specific-terms-in-title", text: "Multiple specific terms in title" },

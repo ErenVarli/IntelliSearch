@@ -2,7 +2,6 @@ import React from "react";
 import InputTextType from "../FormElements/InputTextType";
 
 const EssentialOperators: React.FC = () => {
-
     const essentialOperators = [
         { label: "targeted-sentence", text: "Targeted sentence" },
         { label: "terms-to-exclude", text: "Terms to exclude" },
