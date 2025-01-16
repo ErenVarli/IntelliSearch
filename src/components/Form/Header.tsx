@@ -13,13 +13,14 @@ const introStyle = {
 };
 
 const introStyleParagraph = {
-  fontSize: 10,
+  fontSize: 14,
   width: "60%",
   margin: "auto",
+  color: "#FFFFFF",
 };
 
 const colorBlueDark = {
-  color: "#212529",
+  color: "#FFFFFF" /*exceptionnellement light*/,
   fontWeight: 400,
 };
 
@@ -51,7 +52,7 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
       >
         <div id="popup-header" className="d-flex flex-row" style={marginTitle}>
           <img
-            src="https://evarli.com/wp-content/uploads/2024/05/AspasLogo-Blue-e1716043121658.png"
+            src="icon_evarli_light.png"
             alt="Logo Evarli"
             width={22}
             height={32}

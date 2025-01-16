@@ -1,8 +1,8 @@
 import Title from "../Titles/H/Titles";
-import CheckOperators from "../Adjustment/CheckOperators";
-import EssentialOperators from "../Adjustment/EssentialOperators";
-import CombinedOperators from "../Adjustment/CombinedOperators";
-import DateOperators from "../Adjustment/DatesOperators";
+import CheckOperators from "../Operators/CheckOperators";
+import EssentialOperators from "../Operators/EssentialOperators";
+import CombinedOperators from "../Operators/CombinedOperators";
+import DateOperators from "../Operators/DatesOperators";
 import HeaderForm from "./Header";
 import ButtonSearch from "../Buttons/ButtonSearch";
 
@@ -21,7 +21,9 @@ const closeBtnStyle = {
   width: "min-content",
   textDecoration: "underline",
   border: "none",
-  backgroundColor: "transparent",
+  borderRadius: "5px",
+  backgroundColor: "white",
+  padding: "7px 15px",
 };
 
 const boxWidth = {
@@ -34,6 +36,7 @@ const fieldsetWidth = {
   borderRadius: "10px",
   padding: "15px",
 };
+
 const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
   return (
     <div className="search-window" id="t-search-window">

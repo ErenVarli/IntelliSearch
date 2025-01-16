@@ -40,15 +40,16 @@ body {
   font-weight: bolder !important;
 }
 .search-window {
-  background-color: #f2f5f8;
+  background-color: #1b2731;
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
   width: 100% !important;
+  transition: all 2s ease-out !important;
 }
 .form-control {
   font-weight: 500 !important;
-  color: #0b5ed7 !important;
+  color: #1b2731 !important;
 }
 .search-window {
   z-index: 10 !important;
@@ -58,6 +59,9 @@ fieldset .operator-box {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+}
+.gsib_b {
+  display: none !important;
 }
 .gsc-input-box,
 #gsc-i-id1 {
@@ -72,17 +76,25 @@ fieldset .operator-box {
 #popup-button {
   width: max-content;
   position: absolute;
-  border-radius: 100%;
+  border-radius: 20px;
   top: 10px;
   right: 15px;
-  padding: 7px 8.5px;
+  padding: 0px;
+  width: 120px;
   background-color: #1b2731;
+  transition: all 0.2s ease-in-out;
 }
-
 #popup-button:hover {
-  padding: 8px 9.5px;
+  transform: scale(1.03);
+  transition: all 0.1s ease-out;
 }
-
+#button-clear:hover {
+  transform: scale(1.01);
+  transition: all 0.1s ease-out;
+}
+#search-btn:hover{
+  background-color: #456bb1;
+}
 @media (min-width: 375px) and (max-width: 768px) {
   .search-window form {
     width: 95% !important;
@@ -130,8 +142,7 @@ fieldset .operator-box {
   }
   #popup-button:hover {
     width: 8.5rem;
-    padding: 1px 1px ;
-    transition: all 0.2s ease-out;
+    padding: 1px 1px;
   }
   #advertisment {
     width: 95% !important;
@@ -187,8 +198,7 @@ fieldset .operator-box {
   }
   #popup-button:hover {
     width: 8.5rem;
-    padding: 1px 1px ;
-    transition: all 0.2s ease-out;
+    padding: 1px 1px;
   }
   #advertisment {
     width: 95% !important;

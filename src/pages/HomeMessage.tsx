@@ -21,9 +21,9 @@ const HomeMessage: React.FC = () => {
     <>
       <div style={introHomePageStyle} className="introduction-text" id="introduction-text">
         <img
-          src="./icon_evarli.png"
+          src="./icon_evarli_dark.png"
           alt="Evarli Logo"
-          width={75}
+          width={80}
           height={110}
           style={marginImg}
         />

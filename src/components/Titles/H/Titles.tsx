@@ -27,9 +27,9 @@ const titleStyleH3 = {
 };
 
 const titleStyleH4 = {
-  color: "#375FAC",
-  fontSize: 18,
-  fontWeight: 600,
+  color: "#C1C1C1",
+  fontSize: 22,
+  fontWeight: 200,
 };
 
 const Title: React.FC<titlesProps> = ({ variante, label, className }) => {

@@ -1,9 +1,13 @@
 import { displaySearchResults } from "./DisplaySearchResults";
+import { GrowButton } from "./GrowButton";
 
-export function displayPopup(display: boolean) {
+export async function displayPopup(display: boolean) {
+  const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
   if (display) {
     let popup = <HTMLInputElement>document.getElementById("t-search-window");
     if (popup != null) {
+      GrowButton(true);
+      await sleep(100);
       let introduction_text = <HTMLInputElement>(
         document.getElementById("introduction-text")
       );
@@ -14,6 +18,7 @@ export function displayPopup(display: boolean) {
   } else {
     let popup = <HTMLInputElement>document.getElementById("t-search-window");
     if (popup != null) {
+      GrowButton(false);
       let introduction_text = <HTMLInputElement>(
         document.getElementById("introduction-text")
       );

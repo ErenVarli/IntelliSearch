@@ -7,9 +7,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<IntelliSearch />} />
+        <Route path="/" element={<IntelliSearch />} /> 
       </Routes>
-
     </>
   );
 }
