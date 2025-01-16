@@ -7,11 +7,11 @@ interface titlesProps {
 }
 
 const titleStyle = {
-  color: "#375FAC",
+  color: "#C1C1C1",
 };
 
 const titleStyleH2 = {
-  color: "#375FAC",
+  color: "#C1C1C1",
   fontSize: 27,
   fontWeight: 600,
   marginTop: -25,
@@ -19,7 +19,7 @@ const titleStyleH2 = {
 };
 
 const titleStyleH3 = {
-  color: "#05070E",
+  color: "#C1C1C1",
   fontSize: 27,
   fontWeight: 300,
   marginTop: -25,

@@ -1,25 +1,60 @@
+::-webkit-scrollbar,
+.gsc-search-button-v2,
+.gsib_b,
+.gcsc-more-maybe-branding-root,
+.gcsc-find-more-on-google-root,
+.gsc-above-wrapper-area {
+  display: none;
+}
+
+body,
+.gsc-control-cse,
+.gsc-search-button-v2 {
+  background-color: #13191d !important;
+}
 body {
-  background-color: #f2f5f8 !important;
   overflow-x: hidden;
 }
+
+.home-content,
+.gsc-control-cse {
+  position: relative;
+}
+
+.home-content {
+  top: 3em !important;
+}
+.gsc-control-cse,
+.gsc-table-result,
+fieldset .operator-box {
+  display: flex;
+}
+
+.gsc-control-cse,
+.home-content {
+  margin: auto;
+}
+
+.gsc-control-cse,
+.gssb_e,
+.gs-snippet,
+.gsc-result,
+.gsc-input-box,
+#gsc-i-id1 {
+  border: none !important;
+}
+
+.gsc-control-cse,
+#gcse-search-bar {
+  width: 75% !important;
+}
+
 .gsc-control-cse {
   border-radius: 25px;
   overflow: hidden;
-  display: flex;
   align-items: center;
-  margin: auto;
   margin-top: 1rem;
-  border: 1px solid #555 !important;
-  padding: 2px !important;
-  width: 75% !important;
-}
-.gsc-search-button-v2 {
-  /*   margin-top: 5px;
-  background-color: #1b2731 !important;
-  border: none !important;
-  padding: 10px !important;
-  border-radius: 50% !important; */
-  display: none !important;
+  padding: 0px !important;
 }
 .gsc-search-button-v2 svg {
   fill: #fff;
@@ -27,62 +62,134 @@ body {
   height: 16px;
 }
 .gssb_e {
-  border: none !important;
   position: relative !important;
   left: 15px !important;
 }
 .gsc-completion-container {
   border-radius: 15px !important;
 }
-.gs-snippet {
+.gs-snippet,
+.gsc-input-box,
+#gsc-i-id1,
+.gsc-result {
   background-color: transparent !important;
-  border: none !important;
+}
+.gs-snippet {
   font-weight: bolder !important;
 }
 .search-window {
-  background-color: #1b2731;
+  width: 100% !important;
+}
+.search-window {
+  background-color: #1a242b;
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
-  width: 100% !important;
   transition: all 2s ease-out !important;
 }
 .form-control {
   font-weight: 500 !important;
-  color: #1b2731 !important;
+  color: #dcdcdc !important;
 }
 .search-window {
   z-index: 10 !important;
 }
+
 fieldset .operator-box {
-  display: flex;
   flex-wrap: wrap;
+}
+
+fieldset .operator-box {
   justify-content: space-around;
   width: 100%;
 }
-.gsib_b {
-  display: none !important;
+
+.gsc-cursor-box {
+  border-radius: 100px !important;
+}
+.gs-no-results-result .gs-snippet {
+  color: white !important;
+  font-size: 26px;
+  font-weight: 100 !important;
+}
+
+.gs-title,
+.gs-title b {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: normal;
+  color: #7ea9fe !important;
+  margin-bottom: 5px;
+}
+.gs-image {
+  border-radius: 10px !important;
+}
+.gsc-table-result {
+  font-weight: 100 !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+.gsc-result {
+  margin-top: 5px !important;
+  padding: 15px 12px !important;
+}
+.gsc-table-result {
+  flex-wrap: nowrap !important;
+  flex-direction: row-reverse;
+}
+.gs-visibleUrl {
+  color: #d4d4d4 !important;
+}
+.gsc-input {
+  color: white;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+.gsc-cursor,
+.gsc-cursor-container-next {
+  color: white !important;
+}
+.form-control {
+  background-color: #293140 !important;
+}
+
+.form-control > label {
+  background-color: #293140 !important;
+}
+
+.form-floating > label {
+  color: #ffffff !important;
+}
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: #293140 !important;
+}
+.gsc-tabsArea{
+  width: 95% !important;
+  margin: auto !important;
 }
 .gsc-input-box,
 #gsc-i-id1 {
-  background-color: transparent !important;
-  border: none !important;
   pointer-events: none;
 }
 #gcse-search-bar {
-  width: 100%;
   padding: 0 !important;
+}
+#popup-button {
+  border-radius: 20px;
 }
 #popup-button {
   width: max-content;
   position: absolute;
-  border-radius: 20px;
   top: 10px;
   right: 15px;
   padding: 0px;
   width: 120px;
-  background-color: #1b2731;
+  background-color: #1a242b;
   transition: all 0.2s ease-in-out;
+  border: solid 1px rgb(154, 146, 146);
 }
 #popup-button:hover {
   transform: scale(1.03);
@@ -92,18 +199,18 @@ fieldset .operator-box {
   transform: scale(1.01);
   transition: all 0.1s ease-out;
 }
-#search-btn:hover{
+#search-btn:hover {
   background-color: #456bb1;
 }
+
 @media (min-width: 375px) and (max-width: 768px) {
   .search-window form {
-    width: 95% !important;
+    width: 100% !important;
   }
   .header-container {
     width: 100% !important;
   }
   fieldset .operator-box {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
@@ -115,15 +222,31 @@ fieldset .operator-box {
   .mobile-wrap {
     flex-wrap: wrap;
   }
+  .gsc-result {
+    background-color: #111518 !important;
+    width: 100vw;
+  }
   .gsc-control-cse {
-    width: 95% !important;
+    width: 100% !important;
   }
   .home-content {
-    position: relative;
-    top: 3em;
-    width: 95%;
-    margin: auto;
+    top: 3em !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
+  .gcse-search-bar,
+  #gcse-search-bar {
+    width: 100%;
+    right: 0 !important;
+  }
+  .gsc-control-cse {
+    width: 100% !important;
+  }
+  .gsc-control-cse,
+  #gcse-search-bar {
+    width: 100% !important;
+  }
+
   #popup-header img,
   #popup-header span {
     margin: auto !important;
@@ -147,6 +270,9 @@ fieldset .operator-box {
   #advertisment {
     width: 95% !important;
   }
+  #start-message {
+    font-size: 20px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -160,7 +286,6 @@ fieldset .operator-box {
     font-size: 16px !important;
   }
   fieldset .operator-box {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 70%;
@@ -173,13 +298,16 @@ fieldset .operator-box {
     flex-wrap: wrap;
   }
   .gsc-control-cse {
-    width: 75% !important;
     height: 7 * 60px !important;
   }
   .home-content {
-    position: relative;
     top: 5em;
   }
+  .gsc-control-cse,
+  #gcse-search-bar {
+    width: 100% !important;
+  }
+
   #popup-header img,
   #popup-header span {
     margin: auto !important;

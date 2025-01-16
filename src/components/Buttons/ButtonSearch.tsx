@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import { searchEngine } from "../../searchEngineAlgoV2/searchAlgorithm.ts";
+import { useEffect } from "react";
 
 const buttonStyle = {
   width: "min-content",
@@ -10,17 +11,26 @@ const buttonStyle = {
 };
 
 const ButtonSearch: React.FC = () => {
-  
-  const searchFunctions = () => {
-    searchEngine();
-  };
+  useEffect(() => {
+    const listener = (event: { code: string; preventDefault: () => void }) => {
+      if (event.code === "Enter" || event.code === "NumpadEnter") {
+        event.preventDefault();
+        searchEngine();
+      }
+    };
+    document.addEventListener("keydown", listener);
+    return () => {
+      document.removeEventListener("keydown", listener);
+    };
+  }, []);
+
   return (
     <div style={buttonStyle}>
       <Button
         id="search-btn"
         variant="none"
         className="text-light"
-        onClick={searchFunctions}
+        onClick={searchEngine}
       >
         Search
       </Button>

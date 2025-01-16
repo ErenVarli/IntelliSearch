@@ -19,7 +19,7 @@ const introStyleParagraph = {
   color: "#FFFFFF",
 };
 
-const colorBlueDark = {
+const colorLight = {
   color: "#FFFFFF" /*exceptionnellement light*/,
   fontWeight: 400,
 };
@@ -29,8 +29,9 @@ const colorBlueLight = {
   fontWeight: 400,
 };
 
-const marginBeta = {
+const spanStyle = {
   marginTop: 22,
+  color: "#FFFFFF"
 };
 
 const marginTitle = {
@@ -58,10 +59,10 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
             height={32}
             style={marginLogoEvarli}
           />
-          <h1 style={colorBlueDark}>
+          <h1 style={colorLight}>
             Intelli<span style={colorBlueLight}>Search</span>
           </h1>
-          <span style={marginBeta}>Se-2</span>
+          <span style={spanStyle}>delta</span>
         </div>
         <p id="intro-style-paragraph" style={introStyleParagraph}>
           For educational and research purposes only. Not to be used for

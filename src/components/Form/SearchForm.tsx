@@ -10,6 +10,7 @@ interface PopupProps {
   onClose: () => void;
 }
 
+
 const formStyle = {
   width: "95%",
   height: "100%",
@@ -30,15 +31,17 @@ const boxWidth = {
   width: "100%",
 };
 
-const fieldsetWidth = {
+const fieldsetStyle = {
   margin: "auto",
-  backgroundColor: "#FFFFFF",
   borderRadius: "10px",
   padding: "15px",
+  backgroundColor: "#293140",
+  color: "white"
 };
 
 const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
-  return (
+
+    return (
     <div className="search-window" id="t-search-window">
       <HeaderForm />
       <form className="m-auto d-flex flex-column" style={formStyle}>
@@ -72,7 +75,7 @@ const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
             <div>
               <Title className="mb-3" variante="h4" label="File Types" />
               <fieldset
-                style={fieldsetWidth}
+                style={fieldsetStyle}
                 className="d-flex flex-wrap justify-content-around"
               >
                 <CheckOperators />
