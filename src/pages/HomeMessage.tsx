@@ -12,25 +12,38 @@ const marginImg = {
   marginBottom: 40,
 };
 
-const marginParagraph = {
+const introStyle = {
   marginTop: -20,
+  color: "#C1C1C1",
+};
+
+const startMessage = {
+  fontSize: 25,
+  color: "#C1C1C1",
 };
 
 const HomeMessage: React.FC = () => {
   return (
     <>
-      <div style={introHomePageStyle} className="introduction-text" id="introduction-text">
+      <div
+        style={introHomePageStyle}
+        className="introduction-text"
+        id="introduction-text"
+      >
         <img
-          src="./icon_evarli.png"
+          src="./icon_evarli_light.png"
           alt="Evarli Logo"
-          width={75}
+          width={80}
           height={110}
           style={marginImg}
         />
         <Title variante="h3" label="IntelliSearch"></Title>
-        <p style={marginParagraph}>
+        <p style={introStyle}>
           Explore the darkest corners of the Internet with a state-of-the-art
           tool designed for professionals and enthusiasts alike.
+        </p>
+        <p id="start-message" style={startMessage}>
+          <i>Use the dynamic island to dorking...</i>
         </p>
       </div>
     </>

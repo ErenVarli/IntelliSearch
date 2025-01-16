@@ -13,13 +13,14 @@ const introStyle = {
 };
 
 const introStyleParagraph = {
-  fontSize: 10,
+  fontSize: 14,
   width: "60%",
   margin: "auto",
+  color: "#FFFFFF",
 };
 
-const colorBlueDark = {
-  color: "#212529",
+const colorLight = {
+  color: "#FFFFFF" /*exceptionnellement light*/,
   fontWeight: 400,
 };
 
@@ -28,8 +29,9 @@ const colorBlueLight = {
   fontWeight: 400,
 };
 
-const marginBeta = {
+const spanStyle = {
   marginTop: 22,
+  color: "#FFFFFF"
 };
 
 const marginTitle = {
@@ -51,16 +53,16 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
       >
         <div id="popup-header" className="d-flex flex-row" style={marginTitle}>
           <img
-            src="https://evarli.com/wp-content/uploads/2024/05/AspasLogo-Blue-e1716043121658.png"
+            src="icon_evarli_light.png"
             alt="Logo Evarli"
             width={22}
             height={32}
             style={marginLogoEvarli}
           />
-          <h1 style={colorBlueDark}>
+          <h1 style={colorLight}>
             Intelli<span style={colorBlueLight}>Search</span>
           </h1>
-          <span style={marginBeta}>Se-2</span>
+          <span style={spanStyle}>delta</span>
         </div>
         <p id="intro-style-paragraph" style={introStyleParagraph}>
           For educational and research purposes only. Not to be used for

@@ -1,5 +1,5 @@
 export function settingsSearchBar() {
-  const TEXT = "Use the top right filter to dorking.";
+  const TEXT = "";
   const observer = new MutationObserver(() => {
     const searchBar = document.getElementById("gsc-i-id1") as HTMLInputElement;
     if (searchBar) {

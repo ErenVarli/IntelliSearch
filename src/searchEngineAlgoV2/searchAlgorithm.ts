@@ -3,6 +3,7 @@ import { essentialOperatorsCombinationEngine } from "./EssentialOperatorsEngine 
 import { dateOperatorsCombinationEngine } from "./DateOperators/dateOperatorsEngine";
 import { fileOperatorsCombinationEngine } from "./FileOperators/FileOperators";
 import { displayPopup } from "../actions/DisplayPopup";
+import { scrollToTop } from "../actions/ScrollToTop";
 
 let request: string = "";
 
@@ -135,6 +136,7 @@ function engine() {
 export function searchEngine() {
   engine();
   setSearchEngineRequest();
+  scrollToTop();
 }
 
 export function setSearchEngineRequest() {

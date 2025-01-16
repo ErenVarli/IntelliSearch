@@ -1,14 +1,15 @@
 import Title from "../Titles/H/Titles";
-import CheckOperators from "../Adjustment/CheckOperators";
-import EssentialOperators from "../Adjustment/EssentialOperators";
-import CombinedOperators from "../Adjustment/CombinedOperators";
-import DateOperators from "../Adjustment/DatesOperators";
+import CheckOperators from "../Operators/CheckOperators";
+import EssentialOperators from "../Operators/EssentialOperators";
+import CombinedOperators from "../Operators/CombinedOperators";
+import DateOperators from "../Operators/DatesOperators";
 import HeaderForm from "./Header";
 import ButtonSearch from "../Buttons/ButtonSearch";
 
 interface PopupProps {
   onClose: () => void;
 }
+
 
 const formStyle = {
   width: "95%",
@@ -21,21 +22,26 @@ const closeBtnStyle = {
   width: "min-content",
   textDecoration: "underline",
   border: "none",
-  backgroundColor: "transparent",
+  borderRadius: "5px",
+  backgroundColor: "white",
+  padding: "7px 15px",
 };
 
 const boxWidth = {
   width: "100%",
 };
 
-const fieldsetWidth = {
+const fieldsetStyle = {
   margin: "auto",
-  backgroundColor: "#FFFFFF",
   borderRadius: "10px",
   padding: "15px",
+  backgroundColor: "#293140",
+  color: "white"
 };
+
 const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
-  return (
+
+    return (
     <div className="search-window" id="t-search-window">
       <HeaderForm />
       <form className="m-auto d-flex flex-column" style={formStyle}>
@@ -69,7 +75,7 @@ const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
             <div>
               <Title className="mb-3" variante="h4" label="File Types" />
               <fieldset
-                style={fieldsetWidth}
+                style={fieldsetStyle}
                 className="d-flex flex-wrap justify-content-around"
               >
                 <CheckOperators />
