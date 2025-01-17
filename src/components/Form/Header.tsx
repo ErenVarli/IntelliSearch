@@ -62,7 +62,7 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
           <h1 style={colorLight}>
             Intelli<span style={colorBlueLight}>Search</span>
           </h1>
-          <span style={spanStyle}>delta</span>
+          <span style={spanStyle}>Delta</span>
         </div>
         <p id="intro-style-paragraph" style={introStyleParagraph}>
           For educational and research purposes only. Not to be used for

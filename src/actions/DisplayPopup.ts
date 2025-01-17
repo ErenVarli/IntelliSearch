@@ -7,7 +7,7 @@ export async function displayPopup(display: boolean) {
     GrowButton(true);
     let popup = <HTMLInputElement>document.getElementById("t-search-window");
     if (popup != null) {
-      await sleep(150);
+      await sleep(200);
       let introduction_text = <HTMLInputElement>(
         document.getElementById("introduction-text")
       );

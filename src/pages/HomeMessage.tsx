@@ -37,7 +37,7 @@ const HomeMessage: React.FC = () => {
           height={110}
           style={marginImg}
         />
-        <Title variante="h3" label="IntelliSearch"></Title>
+        <Title variante="h3" label="IntelliSearch Delta"></Title>
         <p style={introStyle}>
           Explore the darkest corners of the Internet with a state-of-the-art
           tool designed for professionals and enthusiasts alike.

@@ -5,26 +5,11 @@ import CombinedOperators from "../Operators/CombinedOperators";
 import DateOperators from "../Operators/DatesOperators";
 import HeaderForm from "./Header";
 import ButtonSearch from "../Buttons/ButtonSearch";
-
-interface PopupProps {
-  onClose: () => void;
-}
-
+import ButtonClose from "../Buttons/ButtonClose";
 
 const formStyle = {
   width: "95%",
   height: "100%",
-};
-
-const closeBtnStyle = {
-  fontSize: 12,
-  fontWeight: 400,
-  width: "min-content",
-  textDecoration: "underline",
-  border: "none",
-  borderRadius: "5px",
-  backgroundColor: "white",
-  padding: "7px 15px",
 };
 
 const boxWidth = {
@@ -36,12 +21,11 @@ const fieldsetStyle = {
   borderRadius: "10px",
   padding: "15px",
   backgroundColor: "#293140",
-  color: "white"
+  color: "white",
 };
 
-const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
-
-    return (
+const SearchForm: React.FC = () => {
+  return (
     <div className="search-window" id="t-search-window">
       <HeaderForm />
       <form className="m-auto d-flex flex-column" style={formStyle}>
@@ -86,11 +70,8 @@ const SearchForm: React.FC<PopupProps> = ({ onClose }) => {
             </div>
           </div>
         </div>
-
         <div className="m-auto">
-          <button className="mb-5" style={closeBtnStyle} onClick={onClose}>
-            Close
-          </button>
+          <ButtonClose />
         </div>
       </form>
     </div>
