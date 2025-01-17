@@ -89,7 +89,7 @@ fieldset .operator-box {
 }
 .form-control {
   font-weight: 500 !important;
-  color: #dcdcdc !important;
+  color: #bdb9b9 !important;
 }
 .search-window {
   z-index: 10 !important;
@@ -104,15 +104,27 @@ fieldset .operator-box {
   width: 100%;
 }
 
+.gs-spelling {
+  
+}
 .gsc-cursor-box {
   border-radius: 100px !important;
 }
-.gs-no-results-result .gs-snippet {
+.gs-no-results-result .gs-snippet,
+.gs-captcha-msg,
+.gs-captcha-info-link, .gs-spelling {
   color: white !important;
-  font-size: 26px;
   font-weight: 100 !important;
 }
 
+.gs-no-results-result .gs-snippet {
+  font-size: 26px;
+}
+
+.gs-captcha-msg,
+.gs-captcha-info-link {
+  font-size: 20px;
+}
 .gs-title,
 .gs-title b {
   font-size: 20px !important;
@@ -144,6 +156,7 @@ fieldset .operator-box {
   color: white;
   font-size: 18px !important;
   font-weight: 100 !important;
+  padding-top: 10px;
 }
 .gsc-cursor,
 .gsc-cursor-container-next {
@@ -166,9 +179,19 @@ fieldset .operator-box {
 .form-floating > .form-select ~ label::after {
   background-color: #293140 !important;
 }
-.gsc-tabsArea{
+.gsc-tabsArea {
   width: 95% !important;
   margin: auto !important;
+}
+
+.gsc-cursor {
+  width: auto !important;
+  margin: auto !important;
+}
+.gsc-cursor-page {
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 5px;
 }
 .gsc-input-box,
 #gsc-i-id1 {
