@@ -3,7 +3,7 @@ import { searchEngine } from "../../searchEngineAlgoV2/searchAlgorithm.ts";
 import { useEffect } from "react";
 
 const buttonStyle = {
-  width: "min-content",
+  width: "max-content",
   marginTop: 30,
   float: "right" as const,
   backgroundColor: "#375FAC",

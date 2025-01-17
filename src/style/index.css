@@ -85,7 +85,7 @@ fieldset .operator-box {
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
-  transition: all 2s ease-out !important;
+  transition: all 0.5s ease-out !important;
 }
 .form-control {
   font-weight: 500 !important;
@@ -109,7 +109,8 @@ fieldset .operator-box {
 }
 .gs-no-results-result .gs-snippet,
 .gs-captcha-msg,
-.gs-captcha-info-link, .gs-spelling {
+.gs-captcha-info-link,
+.gs-spelling {
   color: white !important;
   font-weight: 100 !important;
 }
@@ -156,25 +157,30 @@ fieldset .operator-box {
   padding-top: 10px;
 }
 .gsc-cursor,
-.gsc-cursor-container-next {
-  color: white !important;
+.gsc-cursor-container-next,
+.form-floating > label {
+  color: #ffffff !important;
 }
 .form-control {
   background-color: #293140 !important;
 }
-
-.form-control > label {
-  background-color: #293140 !important;
+.form-floating > input {
+  font-weight: 400 !important;
 }
-
-.form-floating > label {
-  color: #ffffff !important;
-}
+.form-control > label,
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-select ~ label::after {
   background-color: #293140 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #293140 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 .gsc-tabsArea {
   width: 95% !important;
@@ -201,20 +207,20 @@ fieldset .operator-box {
   border-radius: 20px;
 }
 #popup-button {
-  width: max-content;
+  width: 120px;
+  height: 35px;
   position: absolute;
   top: 10px;
   right: 15px;
   padding: 0px;
-  width: 120px;
   background-color: #1a242b;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: solid 1px rgb(154, 146, 146);
 }
-#popup-button:hover {
-  transform: scale(1.03);
-  transition: all 0.1s ease-out;
+.introduction-text {
+  transition: all 0.2s ease-in-out;
 }
+
 #button-clear:hover {
   transform: scale(1.01);
   transition: all 0.1s ease-out;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import SearchFormPopup from "../Popup/SearchFormPopup";
 import { displayPopup } from "../../actions/DisplayPopup";
+import SearchForm from "../Form/SearchForm";
+import { hideHomeMessage } from "../../actions/HideHomeMessage";
 
 const ButtonFilter: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -8,11 +9,7 @@ const ButtonFilter: React.FC = () => {
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
     displayPopup(true);
-  };
-
-  const handleClosePopup = () => {
-    setIsPopupOpen(false);
-    displayPopup(false);
+    hideHomeMessage(true);
   };
 
   return (
@@ -35,7 +32,7 @@ const ButtonFilter: React.FC = () => {
           />
         </svg>
       </button>
-      {isPopupOpen && <SearchFormPopup onClose={handleClosePopup} />}
+      {isPopupOpen && <SearchForm />}
     </div>
   );
 };

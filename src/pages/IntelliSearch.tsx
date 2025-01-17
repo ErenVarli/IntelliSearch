@@ -1,7 +1,7 @@
 import React from "react";
 import Searchbar from "../components/SearchBar/Searchbar";
 import HomeMessage from "./HomeMessage";
-import ButtonFilter from "../components/Buttons/ButtonFilter";
+import ButtonFilter from "../components/Buttons/ButtonOpen";
 
 const IntelliSearch: React.FC = () => {
   return (
