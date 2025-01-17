@@ -46,7 +46,7 @@ fieldset .operator-box {
 
 .gsc-control-cse,
 #gcse-search-bar {
-  width: 75% !important;
+  width: 62% !important;
 }
 
 .gsc-control-cse {
@@ -104,9 +104,6 @@ fieldset .operator-box {
   width: 100%;
 }
 
-.gs-spelling {
-  
-}
 .gsc-cursor-box {
   border-radius: 100px !important;
 }
