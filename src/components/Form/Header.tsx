@@ -31,7 +31,7 @@ const colorBlueLight = {
 
 const spanStyle = {
   marginTop: 22,
-  color: "#FFFFFF"
+  color: "#FFFFFF",
 };
 
 const marginTitle = {
@@ -65,9 +65,11 @@ const HeaderForm: React.FC<headerProps> = ({}) => {
           <span style={spanStyle}>Delta</span>
         </div>
         <p id="intro-style-paragraph" style={introStyleParagraph}>
-          For educational and research purposes only. Not to be used for
-          malicious or illegal purposes. Liability disclaimed for any violation
-          of laws or regulations.
+          <i>
+            À des fins éducatives et de recherche uniquement. Ne pas utiliser à
+            des fins malveillantes ou illégales. Toute responsabilité est exclue
+            en cas de violation des lois ou des règlements.
+          </i>
         </p>
         <ButtonClearFilter />
       </div>

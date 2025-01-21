@@ -3,15 +3,15 @@ import InputTextType from "../FormElements/InputTextType";
 
 const EssentialOperators: React.FC = () => {
     const essentialOperators = [
-        { label: "targeted-sentence", text: "Targeted sentence" },
-        { label: "terms-to-exclude", text: "Terms to exclude" },
-        { label: "targeted-domain-name", text: "Targeted domain name" },
-        { label: "similar-sites", text: "Similar sites" },
-        { label: "specific-term-in-the-url", text: "Specific term in the URL" },
-        { label: "specific-term-in-the-title", text: "Specific term in the title" },
-        { label: "specific-term-in-the-page", text: "Specific term in the page" },
-        { label: "least-one-specified-terms", text: "At least one of the specified terms (min: 2)" },
-        { label: "required-terms", text: "Required terms in results (min: 2)" },
+        { label: "targeted-sentence", text: "Phrase spécifique à rechercher" },
+        { label: "terms-to-exclude", text: "Termes à exclure des résultats" },
+        { label: "targeted-domain-name", text: "Résultats avec ce nom de domaine uniquement" },
+        { label: "similar-sites", text: "Sites similaires" },
+        { label: "specific-term-in-the-url", text: "Mots spécifiques dans l'URL" },
+        { label: "specific-term-in-the-title", text: "Mots spécifiques dans le titre" },
+        { label: "specific-term-in-the-page", text: "Mots spécifiques dans la page" },
+        { label: "least-one-specified-terms", text: "Au moins un de ces termes (2 minimum)" },
+        { label: "required-terms", text: "Termes requis dans les résultats (2 minimum)" }
     ];
 
     return (

@@ -16,7 +16,7 @@ const ButtonStyle = {
 const ButtonClearFilter: React.FC = () => {
   return (
     <div style={marginStyle}>
-      <Button id="button-clear" style={ButtonStyle} onClick={clearAllFilters}>Clear filters</Button>
+      <Button id="button-clear" style={ButtonStyle} onClick={clearAllFilters}>Effacer</Button>
     </div>
   );
 };

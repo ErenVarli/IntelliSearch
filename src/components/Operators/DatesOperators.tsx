@@ -4,8 +4,8 @@ import InputDateType from "../FormElements/InputDateType";
 const DateOperators: React.FC = () => {
 
     const dateInputs = [
-        { label: "before-date", text: "Results dating before" },
-        { label: "after-date", text: "Results dating after" },
+        { label: "before-date", text: "Rechercher les résultats datant avant le" },
+        { label: "after-date", text: "Rechercher les résultats datant après le" },
     ];
 
     return (

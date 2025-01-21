@@ -35,7 +35,7 @@ const SearchForm: React.FC = () => {
               <Title
                 className="mb-3"
                 variante="h4"
-                label="Essential operators"
+                label="Opérateurs essentiels"
               />
               <EssentialOperators />
             </div>
@@ -48,7 +48,7 @@ const SearchForm: React.FC = () => {
               <Title
                 className="mb-3"
                 variante="h4"
-                label="Combined operators"
+                label="Opérateurs Combinés"
               />
               <CombinedOperators />
             </div>
@@ -57,7 +57,7 @@ const SearchForm: React.FC = () => {
               <DateOperators />
             </div>
             <div>
-              <Title className="mb-3" variante="h4" label="File Types" />
+              <Title className="mb-3" variante="h4" label="Formats de fichiers recherchés" />
               <fieldset
                 style={fieldsetStyle}
                 className="d-flex flex-wrap justify-content-around"

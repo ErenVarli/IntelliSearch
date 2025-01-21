@@ -25,7 +25,7 @@ const ButtonClose: React.FC = () => {
         className="text-dark"
         onClick = {handleClosePopup}
       >
-        Close
+        Fermer
       </Button>
     </div>
   );

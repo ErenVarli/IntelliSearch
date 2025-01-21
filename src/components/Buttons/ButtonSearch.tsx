@@ -32,7 +32,7 @@ const ButtonSearch: React.FC = () => {
         className="text-light"
         onClick={searchEngine}
       >
-        Search
+        Rechercher
       </Button>
     </div>
   );
