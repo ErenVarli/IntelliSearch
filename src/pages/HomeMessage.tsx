@@ -39,11 +39,11 @@ const HomeMessage: React.FC = () => {
         />
         <Title variante="h3" label="IntelliSearch Delta"></Title>
         <p style={introStyle}>
-          Explore the darkest corners of the Internet with a state-of-the-art
-          tool designed for professionals and enthusiasts alike.
+          Plongez dans les profondeurs les plus mystérieuses d'Internet avec un
+          outil conçu pour tous les curieux, amateurs et cyber détectives.
         </p>
         <p id="start-message" style={startMessage}>
-          <i>Use the dynamic island to dorking...</i>
+          <i>Utilisez le dynamic island pour effectuer vos recherches...</i>
         </p>
       </div>
     </>
