@@ -13,5 +13,3 @@ Dès son lancement, IntelliSearch a rencontré un franc succès avec 561 requêt
 - React
 - TypeScript
 - Amélioration de la logique algorithmique
-
-### 🔗 Voir les images du projet ci-dessous
