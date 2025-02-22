@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# IntelliSearch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Période : juin 2024 - déc. 2024**
 
-Currently, two official plugins are available:
+IntelliSearch utilise les principes du Google Dorking, qui consiste à exploiter des opérateurs de recherche avancée pour découvrir des données exposées, telles que des fichiers sensibles, des identifiants de connexion et d'autres informations confidentielles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cependant, l'utilisation correcte de ces opérateurs peut être complexe. IntelliSearch simplifie le processus en offrant une interface intuitive qui le rend accessible à tous, quel que soit le domaine : pentesting, marketing, veille technologique, etc.
 
-## Expanding the ESLint configuration
+### 🚀 Succès initial
+Dès son lancement, IntelliSearch a rencontré un franc succès avec 561 requêtes en seulement 24 heures. Le projet est actuellement en développement et sera de retour une fois tout perfectionné. Vous pouvez consulter les images du projet ci-dessous.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🛠️ Compétences développées :
+- React
+- TypeScript
+- Amélioration de la logique algorithmique
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 🔗 Voir les images du projet ci-dessous
